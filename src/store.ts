@@ -44,8 +44,10 @@ export function createHistoryStore<T>(
   let inTransaction = false;
   let transactionStart: HistoryEntry<T> | null = null;
   let listeners: (() => void)[] = [];
+  let cachedSnapshot: HistorySnapshot<T> = { past, present, future };
 
   function notify() {
+    cachedSnapshot = { past, present, future };
     for (const l of listeners) l();
   }
 
@@ -70,7 +72,7 @@ export function createHistoryStore<T>(
 
   return {
     getSnapshot() {
-      return { past, present, future };
+      return cachedSnapshot;
     },
 
     set(updater, setOptions) {
