@@ -5,7 +5,7 @@ Drop-in `useState` upgrade with undo/redo, coalescing, transactions, pause/resum
 ## Install
 
 ```bash
-npm install github:Sam365x7/react-use-history
+npm install react-use-history
 ```
 
 > Requires React 18+
