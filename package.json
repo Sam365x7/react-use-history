@@ -1,6 +1,6 @@
 {
   "name": "react-use-history",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Undo/redo history for React — drop-in useState upgrade with coalescing, transactions, and labels",
   "type": "module",
   "main": "./dist/index.cjs.js",
@@ -13,7 +13,9 @@
       "require": "./dist/index.cjs.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly --declaration --outDir dist",
     "dev": "vite build --watch",
@@ -34,6 +36,12 @@
     "vite": "^5.4.0",
     "vite-plugin-dts": "^4.0.0"
   },
-  "keywords": ["react", "undo", "redo", "history", "hook"],
+  "keywords": [
+    "react",
+    "undo",
+    "redo",
+    "history",
+    "hook"
+  ],
   "license": "MIT"
 }
