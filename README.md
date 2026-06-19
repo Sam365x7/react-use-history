@@ -5,7 +5,7 @@ Drop-in `useState` upgrade with undo/redo, coalescing, transactions, pause/resum
 ## Install
 
 ```bash
-npm install react-use-history
+npm install github:Sam365x7/react-use-history
 ```
 
 > Requires React 18+
@@ -147,19 +147,6 @@ Binds Cmd+Z (undo) and Cmd+Shift+Z / Cmd+Y (redo) to the window. Pass `enabled: 
 ### `createHistoryStore(initialState, options?)`
 
 The headless store — same interface as above but usable outside React (e.g. in Zustand, a plain module, or tests).
-
----
-
-## Run the demo locally
-
-```bash
-git clone https://github.com/Sam365x7/react-use-history.git
-cd react-use-history
-npm install
-npm run example
-```
-
-Then open [http://localhost:5173](http://localhost:5173). The demo covers all four features: coalescing text editor, labeled list with transactions, pause/resume counter, and the time-travel color picker.
 
 ---
 
